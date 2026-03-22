@@ -1,0 +1,77 @@
+/* src/components/MediaCard.css */
+
+.media-card {
+  background: var(--card);
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  transition:
+    transform var(--transition),
+    border-color var(--transition),
+    box-shadow var(--transition);
+  cursor: pointer;
+}
+
+.media-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.5);
+}
+
+.media-card-img {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  display: block;
+  background: var(--surface);
+}
+
+.media-card-body {
+  padding: 12px 14px 14px;
+}
+
+/* ── Type badge ── */
+.media-card-type {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.type-movie {
+  background: rgba(58, 134, 255, 0.18);
+  color: var(--movie);
+}
+
+.type-tvshow {
+  background: rgba(131, 56, 236, 0.18);
+  color: var(--tvshow);
+}
+
+/* ── Title ── */
+.media-card-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--text);
+}
+
+/* ── Rating ── */
+.media-card-rating {
+  font-size: 0.82rem;
+  color: var(--accent2);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.media-card-rating::before {
+  content: '★';
+}
