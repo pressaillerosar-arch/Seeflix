@@ -1,0 +1,104 @@
+/* src/pages/AboutPage.css */
+
+.about-hero {
+  padding: 80px 60px 60px;
+  max-width: 820px;
+}
+
+.about-eyebrow {
+  font-size: 0.78rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 20px;
+}
+
+.about-title {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 6vw, 5.5rem);
+  letter-spacing: 3px;
+  line-height: 1;
+  margin-bottom: 28px;
+  color: var(--text);
+}
+
+.about-intro {
+  font-size: 1.1rem;
+  color: var(--muted);
+  line-height: 1.8;
+  max-width: 620px;
+}
+
+.about-divider {
+  height: 1px;
+  background: linear-gradient(90deg, var(--accent) 0%, transparent 60%);
+  margin: 0 40px;
+}
+
+/* ── Mission section ── */
+.about-mission {
+  padding: 64px 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.about-mission-text h2 {
+  font-family: var(--font-display);
+  font-size: 2.6rem;
+  letter-spacing: 2px;
+  color: var(--text);
+  margin-bottom: 20px;
+}
+
+.about-mission-text p {
+  color: var(--muted);
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+/* ── Value cards ── */
+.about-values {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.value-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+}
+
+.value-card h4 {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  color: var(--accent2);
+  margin-bottom: 6px;
+}
+
+.value-card p {
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .about-hero {
+    padding: 60px 24px 40px;
+  }
+
+  .about-divider {
+    margin: 0 24px;
+  }
+
+  .about-mission {
+    grid-template-columns: 1fr;
+    padding: 40px 24px;
+    gap: 36px;
+  }
+}
