@@ -1,22 +1,14 @@
-import { Link } from 'react-router-dom';
-import './Footer.css';
+import { Link } from 'react-router-dom'
+import './Footer.css'
 
 function Footer() {
   return (
     <footer className="footer">
       <div className="footer-top">
-        {/* Brand */}
         <div className="footer-brand">
-          <div className="footer-logo">
-            SEE<span>FLIX</span>
-          </div>
-          <p className="footer-tagline">
-            Your ultimate destination for films and series from around the world.
-            Stream what matters.
-          </p>
+          <div className="footer-logo">SEE<span>FLIX</span></div>
+          <p className="footer-tagline">Your ultimate destination for films and series. Stream what matters.</p>
         </div>
-
-        {/* Navigation */}
         <nav className="footer-nav">
           <h5>Navigation</h5>
           <ul>
@@ -27,13 +19,12 @@ function Footer() {
           </ul>
         </nav>
       </div>
-
       <div className="footer-bottom">
         <span className="footer-copy">© 2025 Seeflix. All rights reserved.</span>
         <span className="footer-badge">✦ StreamSpace</span>
       </div>
     </footer>
-  );
+  )
 }
 
-export default Footer;
+export default Footer
