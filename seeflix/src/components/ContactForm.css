@@ -1,66 +1,18 @@
-
-
-.contact-form-box {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  padding: 40px;
+.contact-form-box { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 40px; }
+.form-group { margin-bottom: 24px; }
+.form-label { display: block; font-size: 0.82rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
+.form-input, .form-textarea {
+  width: 100%; background: var(--card); border: 1px solid var(--border);
+  border-radius: 8px; padding: 13px 16px; color: var(--text);
+  font-family: var(--font-body); font-size: 0.95rem; outline: none;
+  transition: border-color var(--transition);
 }
-
-.form-group {
-  margin-bottom: 24px;
-}
-
-.form-label {
-  display: block;
-  font-size: 0.82rem;
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: var(--muted);
-  margin-bottom: 8px;
-}
-
-.form-input,
-.form-textarea {
-  width: 100%;
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 13px 16px;
-  color: var(--text);
-  font-family: var(--font-body);
-  font-size: 0.95rem;
-  outline: none;
-  transition: border-color var(--transition), background var(--transition);
-}
-
-.form-input:focus,
-.form-textarea:focus {
-  border-color: var(--accent);
-  background: #1c1c2a;
-}
-
-.form-textarea {
-  resize: vertical;
-  min-height: 140px;
-}
-
+.form-input:focus, .form-textarea:focus { border-color: var(--accent); }
+.form-textarea { resize: vertical; min-height: 140px; }
 .form-submit {
-  width: 100%;
-  padding: 14px;
-  background: var(--accent);
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  font-family: var(--font-body);
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: 0.05em;
+  width: 100%; padding: 14px; background: var(--accent); color: #fff;
+  border: none; border-radius: 8px; font-family: var(--font-body);
+  font-size: 1rem; font-weight: 600;
   transition: transform 0.15s, box-shadow 0.15s;
 }
-
-.form-submit:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(230, 57, 70, 0.35);
-}
+.form-submit:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(230,57,70,0.35); }
