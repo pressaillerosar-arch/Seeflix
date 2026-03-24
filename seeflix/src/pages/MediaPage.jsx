@@ -1,15 +1,13 @@
-// src/pages/MediaPage.jsx
-
-import { useState } from 'react';
-import MediaCard from '../components/MediaCard';
-import mediaData from '../data/mediaData';
-import './MediaPage.css';
+import { useState } from 'react'
+import MediaCard from '../components/MediaCard.jsx'
+import mediaData from '../data/mediaData.js'
+import './MediaPage.css'
 
 function MediaPage() {
-  const [filter, setFilter] = useState('all');
+  const [filter, setFilter] = useState('all')
 
   const filtered =
-    filter === 'all' ? mediaData : mediaData.filter((m) => m.type === filter);
+    filter === 'all' ? mediaData : mediaData.filter((m) => m.type === filter)
 
   return (
     <div className="page media-page">
@@ -18,38 +16,17 @@ function MediaPage() {
           <h1 className="media-page-title">Full Catalogue</h1>
           <span className="media-page-count">{filtered.length} titles</span>
         </div>
-
-        {/* Filter buttons */}
         <div className="filter-bar">
-          <button
-            className={`filter-btn ${filter === 'all' ? 'active' : ''}`}
-            onClick={() => setFilter('all')}
-          >
-            All
-          </button>
-          <button
-            className={`filter-btn ${filter === 'movie' ? 'active' : ''}`}
-            onClick={() => setFilter('movie')}
-          >
-            Movies
-          </button>
-          <button
-            className={`filter-btn ${filter === 'tvshow' ? 'active' : ''}`}
-            onClick={() => setFilter('tvshow')}
-          >
-            TV Shows
-          </button>
+          <button className={`filter-btn ${filter === 'all'    ? 'active' : ''}`} onClick={() => setFilter('all')}>All</button>
+          <button className={`filter-btn ${filter === 'movie'  ? 'active' : ''}`} onClick={() => setFilter('movie')}>Movies</button>
+          <button className={`filter-btn ${filter === 'tvshow' ? 'active' : ''}`} onClick={() => setFilter('tvshow')}>TV Shows</button>
         </div>
       </div>
-
-      {/* Unified grid — type field used for visual distinction inside MediaCard */}
       <div className="media-grid">
-        {filtered.map((media) => (
-          <MediaCard key={media.id} {...media} />
-        ))}
+        {filtered.map((m) => <MediaCard key={m.id} {...m} />)}
       </div>
     </div>
-  );
+  )
 }
 
-export default MediaPage;
+export default MediaPage
