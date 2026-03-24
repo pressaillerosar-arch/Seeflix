@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import MediaCard from '../components/MediaCard.jsx'
-import mediaData from '../data/mediaData.js'
+import mediaData from '../data/mediaData.jsx'
 import './MediaPage.css'
 
 function MediaPage() {
