@@ -1,10 +1,10 @@
-
-import './AboutPage.css';
+import './AboutPage.css'
 
 function AboutPage() {
   return (
     <div className="page">
-      {/* ── Intro ── */}
+
+      {/* ── Section titre + présentation ── */}
       <section className="about-hero">
         <p className="about-eyebrow">✦ Our Story</p>
         <h1 className="about-title">ABOUT SEEFLIX</h1>
@@ -18,7 +18,7 @@ function AboutPage() {
 
       <div className="about-divider" />
 
-      {/* ── Mission ── */}
+      {/* ── Section mission + 3 value cards ── */}
       <section className="about-mission">
         <div className="about-mission-text">
           <h2>OUR MISSION</h2>
@@ -42,29 +42,21 @@ function AboutPage() {
         <div className="about-values">
           <div className="value-card">
             <h4>Curation First</h4>
-            <p>
-              Every title is reviewed by our editorial team. We prioritise quality
-              and diversity over sheer volume.
-            </p>
+            <p>Every title is reviewed by our editorial team. We prioritise quality and diversity over sheer volume.</p>
           </div>
           <div className="value-card">
             <h4>Global Vision</h4>
-            <p>
-              From Korean dramas to Italian neo-realism — our catalogue spans 80+
-              countries and 30+ languages.
-            </p>
+            <p>From Korean dramas to Italian neo-realism — our catalogue spans 80+ countries and 30+ languages.</p>
           </div>
           <div className="value-card">
             <h4>Creator Respect</h4>
-            <p>
-              We pay fair rates to studios and creators, ensuring the ecosystem that
-              makes great content possible stays alive.
-            </p>
+            <p>We pay fair rates to studios and creators, ensuring the ecosystem that makes great content possible stays alive.</p>
           </div>
         </div>
       </section>
+
     </div>
-  );
+  )
 }
 
-export default AboutPage;
+export default AboutPage
